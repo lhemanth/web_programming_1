@@ -1,8 +1,8 @@
 # A very simple Bottle Hello World app for you to get started with...
 import os
-import sqlite3
 
-from bottle import get, post, request, template, redirect, route
+
+from bottle import  template, route
 
 ON_PYTHONANYWHERE = "PYTHONANYWHERE_DOMAIN" in os.environ.keys()
 
@@ -17,8 +17,8 @@ def index(name):
 
 
 @route('/')
-def index():
-    return ('<b>Hello </b>')
+def test():
+    return template("index")
 
 
 if ON_PYTHONANYWHERE:
