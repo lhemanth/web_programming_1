@@ -13,8 +13,26 @@ else:
 
 @route('/<name>')
 def index(name):
-    return template('<h1>Hello {{name}} Welcome to Web Programming 1!</h1>', name=name)
+    return template("hello", name=name)
 
+@route('/hello')
+def basicHello():
+    return ("<h1>Hello Welcome to Web Programming 1!</h1>")
+
+@get('/add_item')
+def get_new_item():
+    return template("add_item")
+
+
+@post('/add_item')
+def post_new_item():
+    new_item = request.forms.get("new_item").strip()
+    connection = sqlite3.connect("work.db")
+    cursor = connection.cursor()
+    cursor.execute("insert into todo (name, status) values (?,?)", (new_item, 1))
+    connection.commit()
+    cursor.close()
+    redirect('/')
 
 @route('/')
 def get_show_list():
@@ -24,6 +42,16 @@ def get_show_list():
     result = cursor.fetchall()
     cursor.close()
     return template("index", rows=result)
+
+
+@get('/set_status/<id:int>/<value:int>')
+def get_set_status(id, value):
+    connection = sqlite3.connect("work.db")
+    cursor = connection.cursor()
+    cursor.execute("update todo set status=? where id=?", (value, id,))
+    connection.commit()
+    cursor.close()
+    redirect('/')
 
 
 if ON_PYTHONANYWHERE:
