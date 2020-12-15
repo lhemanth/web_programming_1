@@ -125,7 +125,7 @@ def get_show_list_ajax():
 
 @get('/show_demo')
 def get_show_demo():
-    return template("jquerydemo")
+    return template("ajaxdemo")
 
 @get('/get_tasks')
 def get_get_tasks():
