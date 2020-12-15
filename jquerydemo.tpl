@@ -7,7 +7,7 @@
     $.getJSON("http://web-hemanthl.pythonanywhere.com/static/data.json", function(result) {
         $("#content").append("<ul>");
         $.each(result, function(i, field) {
-            $("#content").append("<li>" + field["fruit"] + "</li>");
+            $("#content").append("<li>" + field["task"] + "</li>");
         });
         $("#content").append("</ul>");
     });
