@@ -123,6 +123,10 @@ def get_show_list_ajax():
         return
     return template("show_list_ajax", session=session)
 
+@get('/show_demo')
+def get_show_demo():
+    return template("jquerydemo")
+
 @get('/get_tasks')
 def get_get_tasks():
     session = get_session(request, response)
