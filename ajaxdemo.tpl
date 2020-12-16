@@ -17,9 +17,8 @@
   </script>
 </head>
 <body onload='onLoad();'>
-Hello from the sandbox.
-<hr/>
+
 <div id="my_text"></div>
-<hr/>
+
 </body>
 </html>

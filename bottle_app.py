@@ -125,10 +125,18 @@ def get_show_list_ajax():
 
 @get('/show_ajax_demo')
 def get_show_demo():
+    session = get_session(request, response)
+    if session['username'] == 'Guest':
+        redirect('/login')
+        return
     return template("ajaxdemo")
 
 @get('/show_jquery_demo')
-def get_show_demo():
+def get_show_jquery_demo():
+    session = get_session(request, response)
+    if session['username'] == 'Guest':
+        redirect('/login')
+        return
     return template("jquerydemo")
 
 @get('/get_tasks')

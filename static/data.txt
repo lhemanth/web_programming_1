@@ -1,3 +1,5 @@
+<h2>Hello! Welcome to Web Programming 1!</h2>
+<p>Simple Ajax example by using The XMLHttpRequest Object</p>
 <ul>
 <li>Apples</li>
 <li>Oranges</li>

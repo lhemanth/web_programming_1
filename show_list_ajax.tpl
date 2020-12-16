@@ -6,12 +6,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
   $(document).ready(function() {
-    $.getJSON("http://localhost:8080/get_tasks", function(rows) {
+    $.getJSON("http://web-hemanthl.pythonanywhere.com/get_tasks", function(rows) {
         $("#content").append("<table class=\"w3-table w3-bordered w3-border>\"");
         $.each(rows, function(i, row) {
             $("#content").append("<tr>");
                 $("#content").append("<td><a href=\"/update_task/"+row["id"]+"\"><i class=\"material-icons\">edit</i></a></td>");
-                
+
                 $("#content").append("<td>" + row["task"] + "</td>");
                 if (row["status"]) {
                     $("#content").append("<td><a href=\"/update_status/" + row["id"] + "/0\"><i class=\"material-icons\">check_box</i></a></td>");
