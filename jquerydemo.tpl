@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>JQuery Demo Page</title>
+  <title>JQuery Example Page</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
   $(document).ready(function() {
@@ -15,9 +15,9 @@
   </script>
 </head>
 <body>
-Hello from the sandbox.
-<hr/>
+<h2> Sample Jquery Demo</h2>
+
 <div id="content"></div>
-<hr/>
+
 </body>
 </html>
