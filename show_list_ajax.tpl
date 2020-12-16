@@ -23,6 +23,7 @@
             $("#content").append("</tr>");
         });
         $("#content").append("</table>");
+        $("#content").append("<a href=\"/add_item\"><button class=\"w3-button w3-block w3-teal\" >Add item</button></a>");
     });
   })
   </script>
