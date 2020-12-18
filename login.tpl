@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="static/pagestyle.css"  type="text/css" media="all" />
+<link rel="stylesheet" href="http://web-hemanthl.pythonanywhere.com/static/pagestyle.css">
 </head>
-
 <body>
 
  <form class="form" action="/login" method="POST">
