@@ -14,7 +14,7 @@
 
    <h1>Sign Up</h1>
       <label for="username"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="username" required>
+      <input type="text" placeholder="Enter Username" name="username" required><br>
 
       <label for="password"><b>Password</b></label>
       <input type="password" name="password" id="password" minlength=1 placeholder="Enter Password" required />
