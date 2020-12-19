@@ -14,7 +14,7 @@
 
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
-        <input type="submit" class="w3-button w3-block w3-blue" value="Save"/>
+        <input type="submit" class="w3-button w3-block w3-blue" value="Login"/>
         <br>
           <a class="w3-button w3-block w3-red" href="http://web-hemanthl.pythonanywhere.com/register">Register</a>
 

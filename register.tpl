@@ -21,10 +21,10 @@
       <label for="repassword"><b>Re-type Password</b></label>
        <input type="password" name="repassword" id="repassword" placeholder="Enter Password" minlength=1 required />
       <span id="message"></span>
-        <input type="submit" class="w3-button w3-block w3-blue" value="Submit" id="submit" name="submit" disabled/>
+        <input type="submit" class="w3-button w3-block w3-blue" value="Register" id="submit" name="submit" disabled/>
         <br>
 
-          <a class="w3-button w3-block w3-red" href="http://web-hemanthl.pythonanywhere.com/">Login</a>
+          <a class="w3-button w3-block w3-red" href="http://web-hemanthl.pythonanywhere.com/">Login Page</a>
 </form>
 
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'>

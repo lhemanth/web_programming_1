@@ -10,7 +10,7 @@
 
   <div class="w3-card-4">
     <div class="w3-container w3-teal">
-      <h2>Give Student Name as Input</h2>
+      <h2>Add item Here</h2>
     </div>
 
     <form class="w3-container" action="/new_item" method="POST">

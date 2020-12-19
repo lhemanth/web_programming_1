@@ -66,6 +66,10 @@ def post_login():
     save_session(session)
     redirect('/')
 
+@get('/login_error')
+def get_login_error():
+    return template("login_error")
+
 
 @get('/logout')
 def get_logout():

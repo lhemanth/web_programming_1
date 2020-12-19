@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Todo List 0.001</title>
+<title>Todo List 2.0</title>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" >
 </head>
@@ -23,7 +23,7 @@
         %end
         </td>
         <td>
-            <a href="/delete_item/{{row['id']}}" onclick="return confirm('Are you sure?')"><i class="material-icons">delete</i></a>
+            <a href="/delete_item/{{row['id']}}" onclick="return confirm('Are you sure you want to delete?')"><i class="material-icons">delete</i></a>
         </td>
     </tr>
 %end
