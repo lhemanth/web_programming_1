@@ -49,10 +49,10 @@ def post_login():
     if session['username'] != 'Guest':
         redirect('/')
         return
-    # csrf_token = request.forms.get("csrf_token").strip()
-    # if csrf_token != "abcrsrerredadfa":
-    #     redirect('/login_error')
-    #     return
+    csrf_token = request.forms.get("csrf_token").strip()
+    if csrf_token != "abcrsrerredadfa":
+        redirect('/login_error')
+        return
     username = request.forms.get("username").strip()
     password = request.forms.get("password").strip()
     profile = db['profile'].find_one(username=username)

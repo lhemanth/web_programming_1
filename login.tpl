@@ -14,6 +14,7 @@
 
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
+      <input type="hidden" size="100" maxlength="100" name="csrf_token" value="{{csrf_token}}" /><br>
         <input type="submit" class="w3-button w3-block w3-blue" value="Login"/>
         <br>
           <a class="w3-button w3-block w3-red" href="http://web-hemanthl.pythonanywhere.com/register">Register</a>
