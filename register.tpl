@@ -32,7 +32,7 @@
 <script src='//cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js'>
 </script>
 <script>
-/* --- JavaScript --- */
+
 $('form').validate();
 
 $('#password, #repassword').on('keyup', function() {
